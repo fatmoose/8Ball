@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_Ball" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8ball" translatesAutoresizingMaskIntoConstraints="NO" id="MKL-9e-MTI">
+                                <rect key="frame" x="-243" y="-2" width="900" height="900"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cn1-0o-J3A">
+                                <rect key="frame" x="189.5" y="442" width="35.5" height="12"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Answer">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="systemBackgroundColor"/>
+                                            <font key="NSFont" metaFont="system" size="10"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="systemBackgroundColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k0-H4-VX7">
+                                <rect key="frame" x="0.0" y="68" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="qN0-2t-sfe">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ask a question and shake really hard!" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="WCr-LG-kXU">
+                                            <rect key="frame" x="20" y="5" width="374" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.0044965132479999996" green="0.0004032097429" blue="0.30643927189999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="tintColor" red="0.0044965132479999996" green="0.0004032097429" blue="0.30643927189999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                </items>
+                                <color key="barTintColor" red="0.0044965132478387414" green="0.00040320974293332393" blue="0.30643927190721654" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ra1-qX-IgW">
+                                <rect key="frame" x="0.0" y="-11" width="414" height="44"/>
+                                <items/>
+                                <color key="barTintColor" red="0.0044965132479999996" green="0.0004032097429" blue="0.30643927189999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHD-kK-ngA">
+                                <rect key="frame" x="0.0" y="26" width="414" height="44"/>
+                                <items/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" red="0.0044965132479999996" green="0.0004032097429" blue="0.30643927189999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cn1-0o-J3A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1WB-CD-TuB"/>
+                            <constraint firstItem="MKL-9e-MTI" firstAttribute="centerX" secondItem="4k0-H4-VX7" secondAttribute="centerX" id="4R0-IM-dU8"/>
+                            <constraint firstItem="QHD-kK-ngA" firstAttribute="trailing" secondItem="4k0-H4-VX7" secondAttribute="trailing" id="84o-aU-S01"/>
+                            <constraint firstItem="4k0-H4-VX7" firstAttribute="top" secondItem="Ra1-qX-IgW" secondAttribute="bottom" constant="35" id="9cM-3x-rPF"/>
+                            <constraint firstItem="4k0-H4-VX7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A1D-f4-GBp"/>
+                            <constraint firstItem="4k0-H4-VX7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="Haq-x7-oQZ"/>
+                            <constraint firstItem="Cn1-0o-J3A" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="L56-kr-oc6"/>
+                            <constraint firstItem="Ra1-qX-IgW" firstAttribute="trailing" secondItem="QHD-kK-ngA" secondAttribute="trailing" id="Rp6-By-koE"/>
+                            <constraint firstItem="MKL-9e-MTI" firstAttribute="centerY" secondItem="Cn1-0o-J3A" secondAttribute="centerY" id="Xm9-C4-2D8"/>
+                            <constraint firstItem="4k0-H4-VX7" firstAttribute="centerX" secondItem="Cn1-0o-J3A" secondAttribute="centerX" id="dzc-eb-Mi9"/>
+                            <constraint firstItem="QHD-kK-ngA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-18" id="k5u-ZK-qbr"/>
+                            <constraint firstItem="Ra1-qX-IgW" firstAttribute="leading" secondItem="QHD-kK-ngA" secondAttribute="leading" id="nzN-Nr-Io3"/>
+                            <constraint firstItem="QHD-kK-ngA" firstAttribute="leading" secondItem="4k0-H4-VX7" secondAttribute="leading" id="qWf-zK-SPd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="EightBall" destination="MKL-9e-MTI" id="hiB-VR-keL"/>
+                        <outlet property="ans" destination="Cn1-0o-J3A" id="Nyy-TT-K3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="8ball" width="900" height="900"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
